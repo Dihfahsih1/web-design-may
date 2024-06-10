@@ -1,36 +1,14 @@
 <html>
     <head>
-        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <?php include("meta.html");?>
+        <?php include("css.html");?>
         <title>My first Page</title>
     </head>
     <body>
         
       <div class="container">
         <div class="row">
-          <nav class="navbar navbar-expand-lg bg-warning">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">Web Design</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon">Menu</span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="index_page.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="contact.html">Contanct us</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="products.html">Service</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
+          <?php include 'nav.php' ?>
         </div>
         <div class="row">
             <div class="col-lg-8">
@@ -53,7 +31,7 @@
                   </div>
                 </div>
               </center>
-              
+            
               <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
@@ -76,6 +54,6 @@
         </div>
         
       </div>
-      <script src="bootstrap/js/bootstrap.min.js"></script> 
+      <?php include("js.html")?> 
     </body>
 </html>

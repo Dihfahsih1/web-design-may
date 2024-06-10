@@ -2,40 +2,20 @@
 <html lang="en">
     <head>
         <title>Contact Us</title>
-        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <?php include("meta.html");?>
+        <?php include("css.html");?>
     </head>
     <body>
         
     <div class="container">
       <div class="row">
-        <nav class="navbar navbar-expand-lg bg-warning">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">Web Design</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon">Menu</span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="index_page.html">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="about.html">About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" href="contact.html">Contanct us</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="products.html">Service</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
+        <div class="row">
+          <?php include 'nav.php' ?>
+        </div>
       </div>
         <div class="row">
             <div class="col-lg-4">
-                <form action="" method="post">
+                <form action="processContact.php" method="POST">
                     <h3>Contact us through this form</h3>
                     <div class="mb-3">
                         <label class="form-label" for="fname"> First Name</label>
@@ -63,6 +43,6 @@
         
     </div>
     
-<script src="bootstrap/js/bootstrap.min.js"></script>   
+    <?php include("js.html")?>
 </body>
 </html>
