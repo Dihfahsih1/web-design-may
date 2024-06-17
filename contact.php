@@ -23,18 +23,21 @@
                     </div>
         
                     <div class="mb-3">
-                        <label class="form-label" for="lname"> Last Name</label>
+                        <label class="form-label" for="sname"> Last Name</label>
                        
-                        <input type="text" name="lname" class="form-control" id="lname">
+                        <input type="text" name="sname" class="form-control" id="sname">
                     </div>
         
                     <div class="form-group">
-                        <input type="text" name="email" placeholder="enter your email">
+                    <label class="form-label" for="email"> Email</label>
+                        <input type="text" name="email" class="form-control" placeholder="enter your email">
+                    </div>
+
+                    <div class="form-group">
+                    <label class="form-label" for="telephone"> Mobile Number</label>
+                        <input type="text" name="telephone" class="form-control" placeholder="enter your Telephone">
                     </div>
         
-                    <input type="password" name="pass" placeholder="Enter Your password"> <br>
-                    <input type="file" name="photo"><br>
-                    <input type="radio" placeholder="date" name="date"><br>
                     <input type="submit" class="btn btn-primary">
             
                 </form>

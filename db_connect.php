@@ -5,12 +5,9 @@ $db_pass="";
 $db_name= "students";
 $db_port= 3306;
 
-$connect = mysqli_connect($db_host, $db_user, $db_pass, $db_name, $db_port);
-if (!$connect){
+$con = mysqli_connect($db_host, $db_user, $db_pass, $db_name, $db_port);
+if (!$con){
     die("Couldn't connect to the database".mysqli_connect_error());
 }
-else{
-    echo "Connected successfully";
 
-}
 ?>
